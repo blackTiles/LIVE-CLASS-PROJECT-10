@@ -17,7 +17,7 @@ body{
     width: 80%;
     margin: 0px auto;
     height: 100vh;
-    background: url('/images/1658850726169.jpg');
+    background: url('./images/1658850726169.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
