@@ -45,10 +45,14 @@ body{
 }
 .nav-items{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     list-style: none;
+    gap: 30px;
+    position: relative;
+    flex: 1;
 }
 ul li{
-    margin: 0px 20px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -64,6 +68,20 @@ ul li{
 .contact-details{
     font-size: 25px;
 }
+/* nav mobile  */
+.hamburger{
+    color: var(--color1);
+    display: none;
+  }
+  .hamburger span{
+    cursor:pointer;
+    font-size: 35px;
+  }
+  .close-btn{
+    display: none;
+    cursor:pointer;
+  }
+
 
 .hero-inner{
     width: 100%;
@@ -165,4 +183,127 @@ ul li{
     height: 20px;
     background: var(--color1);
     border-radius:50%;
+}
+
+@media (max-width:1500px){
+    .container{
+        width: 100%;
+    }
+    .logo{
+        width: fit-content;
+    }
+    .nav-contact{
+        margin-left:100px;
+    }
+}
+
+@media (max-width:1100px){
+    .container{
+        height: 1400px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 20px 10px 50px 10px;
+    }
+    .nav-part-2{
+        height: fit-content;
+        border-bottom: none;
+    }
+    .nav-items{
+        order: 2;
+    }
+    .nav-contact{
+        order: 1;
+        margin-left:0px;
+    }
+    .contact-sign{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .contact-details{
+        font-size: 16px;
+    }
+    .hamburger{
+        order: 3;
+        display: inline-block;
+    }
+    nav .nav-items{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(2, 14, 27, 0.822);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+    }
+    .close-btn{
+        display: inline-block;
+        position: absolute;
+        right: 25px;
+        top: 60px;
+        /* font-size: 35px; */
+    }
+    .hero-inner{
+        width: 100%;
+        padding:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .part1{
+        margin-top: 80px;
+        position: static;
+        text-align: center;
+        top: 30%;
+        left: 100px;
+    }
+    .part1 h1{
+        margin-bottom: 40px;
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .part1 button{
+        width: 200px;
+        height:60px;
+        background: none;
+        outline: none;
+        border:3px solid var(--color1);
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    .box{
+        background: rgba(187, 183, 183, 0.247);
+        box-sizing: content-box;
+        padding: 20px 20px;
+    }
+    .box1{
+        position: absolute;
+        top: 45%;
+        right: 10px;
+    }
+    .box2{
+        position: absolute;
+        top: 65%;
+    }
+    .line2{
+        width:60px;
+    }
+    .box .box-para{
+        font-size: 16px;
+        font-weight: 600;
+    }
 }
