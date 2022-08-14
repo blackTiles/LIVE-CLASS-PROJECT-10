@@ -192,6 +192,9 @@ ul li{
     .logo{
         width: fit-content;
     }
+    .nav-part-2{
+        width: 80%;
+    }
     .nav-contact{
         margin-left:100px;
     }
@@ -208,6 +211,7 @@ ul li{
         padding: 20px 10px 50px 10px;
     }
     .nav-part-2{
+        width: 70%;
         height: fit-content;
         border-bottom: none;
     }
